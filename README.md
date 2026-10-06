@@ -1,7 +1,7 @@
 # Weathercloud C# Library
 
 [![fern shield](https://img.shields.io/badge/%F0%9F%8C%BF-Built%20with%20Fern-brightgreen)](https://buildwithfern.com?utm_source=github&utm_medium=github&utm_campaign=readme&utm_source=Weathercloud%2FC%23)
-[![nuget shield](https://img.shields.io/nuget/v/WeathercloudApi)](https://nuget.org/packages/WeathercloudApi)
+[![nuget shield](https://img.shields.io/nuget/v/Weathercloud)](https://nuget.org/packages/Weathercloud)
 
 The Weathercloud C# library provides convenient access to the Weathercloud APIs from C#.
 
@@ -33,7 +33,7 @@ This SDK requires:
 ## Installation
 
 ```sh
-dotnet add package WeathercloudApi
+dotnet add package Weathercloud
 ```
 
 ## Reference
@@ -45,9 +45,9 @@ A full reference for this library is available [here](./reference.md).
 Instantiate and use the client with the following:
 
 ```csharp
-using WeathercloudApi;
+using Weathercloud;
 
-var client = new WeathercloudApiClient("REQUESTED_WITH");
+var client = new WeathercloudClient("REQUESTED_WITH");
 await client.Auth.LoginAsync(
     new LoginAuthRequest
     {
@@ -62,11 +62,11 @@ await client.Auth.LoginAsync(
 This SDK allows you to configure different environments for API requests.
 
 ```csharp
-using WeathercloudApi;
+using Weathercloud;
 
-var client = new WeathercloudApiClient(clientOptions: new ClientOptions
+var client = new WeathercloudClient(clientOptions: new ClientOptions
 {
-    BaseUrl = WeathercloudApiEnvironment.Default
+    BaseUrl = WeathercloudClientEnvironment.Default
 });
 ```
 
@@ -76,11 +76,11 @@ When the API returns a non-success status code (4xx or 5xx response), a subclass
 will be thrown.
 
 ```csharp
-using WeathercloudApi;
+using Weathercloud;
 
 try {
     var response = await client.Auth.LoginAsync(...);
-} catch (WeathercloudApiApiException e) {
+} catch (WeathercloudClientApiException e) {
     System.Console.WriteLine(e.Body);
     System.Console.WriteLine(e.StatusCode);
 
@@ -148,7 +148,7 @@ var response = await client.Auth.LoginAsync(
 Access raw HTTP response data (status code, headers, URL) alongside parsed response data using the `.WithRawResponse()` method.
 
 ```csharp
-using WeathercloudApi;
+using Weathercloud;
 
 // Access raw response data (status code, headers, etc.) alongside the parsed response
 var result = await client.Auth.LoginAsync(...).WithRawResponse();
@@ -228,7 +228,7 @@ var response = await client.Auth.LoginAsync(
 This SDK uses forward-compatible enums that can handle unknown values gracefully.
 
 ```csharp
-using WeathercloudApi;
+using Weathercloud;
 
 // Using a built-in value
 var loginAuthRequestLoginFormRememberMe = LoginAuthRequestLoginFormRememberMe.Zero;

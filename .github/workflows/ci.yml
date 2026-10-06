@@ -26,16 +26,16 @@ jobs:
         run: dotnet tool restore
 
       - name: Restore dependencies
-        run: dotnet restore src/WeathercloudApi/WeathercloudApi.csproj
+        run: dotnet restore src/Weathercloud/Weathercloud.csproj
 
       - name: Build
-        run: dotnet build src/WeathercloudApi/WeathercloudApi.csproj --no-restore -c Release
+        run: dotnet build src/Weathercloud/Weathercloud.csproj --no-restore -c Release
 
       - name: Restore test dependencies
-        run: dotnet restore src/WeathercloudApi.Test/WeathercloudApi.Test.csproj
+        run: dotnet restore src/Weathercloud.Test/Weathercloud.Test.csproj
 
       - name: Build tests
-        run: dotnet build src/WeathercloudApi.Test/WeathercloudApi.Test.csproj --no-restore -c Release
+        run: dotnet build src/Weathercloud.Test/Weathercloud.Test.csproj --no-restore -c Release
 
       - name: Test
-        run: dotnet test src/WeathercloudApi.Test/WeathercloudApi.Test.csproj --no-restore --no-build -c Release
+        run: dotnet test src/Weathercloud.Test/Weathercloud.Test.csproj --no-restore --no-build -c Release

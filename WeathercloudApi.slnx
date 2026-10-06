@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="src/WeathercloudApi.Test/WeathercloudApi.Test.csproj" />
-  <Project Path="src/WeathercloudApi/WeathercloudApi.csproj" />
-</Solution>

@@ -1,6 +1,6 @@
 # Reference
 ## Auth
-<details><summary><code>client.Auth.<a href="/src/WeathercloudApi/Auth/AuthClient.cs">LoginAsync</a>(LoginAuthRequest { ... }) -> WithRawResponseTask</code></summary>
+<details><summary><code>client.Auth.<a href="/src/Weathercloud/Auth/AuthClient.cs">LoginAsync</a>(LoginAuthRequest { ... }) -> WithRawResponseTask</code></summary>
 <dl>
 <dd>
 
@@ -62,7 +62,7 @@ await client.Auth.LoginAsync(
 </details>
 
 ## DeviceLive
-<details><summary><code>client.DeviceLive.<a href="/src/WeathercloudApi/DeviceLive/DeviceLiveClient.cs">GetValuesAsync</a>(GetValuesDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;DeviceValues&gt;</code></summary>
+<details><summary><code>client.DeviceLive.<a href="/src/Weathercloud/DeviceLive/DeviceLiveClient.cs">GetValuesAsync</a>(GetValuesDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;DeviceValues&gt;</code></summary>
 <dl>
 <dd>
 
@@ -117,7 +117,7 @@ await client.DeviceLive.GetValuesAsync(new GetValuesDeviceLiveRequest { DeviceId
 </dl>
 </details>
 
-<details><summary><code>client.DeviceLive.<a href="/src/WeathercloudApi/DeviceLive/DeviceLiveClient.cs">GetStatsAsync</a>(GetStatsDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;DeviceStats&gt;</code></summary>
+<details><summary><code>client.DeviceLive.<a href="/src/Weathercloud/DeviceLive/DeviceLiveClient.cs">GetStatsAsync</a>(GetStatsDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;DeviceStats&gt;</code></summary>
 <dl>
 <dd>
 
@@ -172,7 +172,7 @@ await client.DeviceLive.GetStatsAsync(new GetStatsDeviceLiveRequest { Code = "57
 </dl>
 </details>
 
-<details><summary><code>client.DeviceLive.<a href="/src/WeathercloudApi/DeviceLive/DeviceLiveClient.cs">GetInfoAsync</a>(GetInfoDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;DeviceInfo&gt;</code></summary>
+<details><summary><code>client.DeviceLive.<a href="/src/Weathercloud/DeviceLive/DeviceLiveClient.cs">GetInfoAsync</a>(GetInfoDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;DeviceInfo&gt;</code></summary>
 <dl>
 <dd>
 
@@ -226,7 +226,7 @@ await client.DeviceLive.GetInfoAsync(new GetInfoDeviceLiveRequest { DeviceId = "
 </dl>
 </details>
 
-<details><summary><code>client.DeviceLive.<a href="/src/WeathercloudApi/DeviceLive/DeviceLiveClient.cs">GetWindRoseAsync</a>(GetWindRoseDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;WindData&gt;</code></summary>
+<details><summary><code>client.DeviceLive.<a href="/src/Weathercloud/DeviceLive/DeviceLiveClient.cs">GetWindRoseAsync</a>(GetWindRoseDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;WindData&gt;</code></summary>
 <dl>
 <dd>
 
@@ -280,7 +280,7 @@ await client.DeviceLive.GetWindRoseAsync(new GetWindRoseDeviceLiveRequest { Code
 </dl>
 </details>
 
-<details><summary><code>client.DeviceLive.<a href="/src/WeathercloudApi/DeviceLive/DeviceLiveClient.cs">GetUpdateStatusAsync</a>(GetUpdateStatusDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;GetUpdateStatusDeviceLiveResponse&gt;</code></summary>
+<details><summary><code>client.DeviceLive.<a href="/src/Weathercloud/DeviceLive/DeviceLiveClient.cs">GetUpdateStatusAsync</a>(GetUpdateStatusDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;GetUpdateStatusDeviceLiveResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -338,7 +338,7 @@ await client.DeviceLive.GetUpdateStatusAsync(
 </dl>
 </details>
 
-<details><summary><code>client.DeviceLive.<a href="/src/WeathercloudApi/DeviceLive/DeviceLiveClient.cs">GetOwnerProfileAsync</a>(GetOwnerProfileDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;DeviceProfile&gt;</code></summary>
+<details><summary><code>client.DeviceLive.<a href="/src/Weathercloud/DeviceLive/DeviceLiveClient.cs">GetOwnerProfileAsync</a>(GetOwnerProfileDeviceLiveRequest { ... }) -> WithRawResponseTask&lt;DeviceProfile&gt;</code></summary>
 <dl>
 <dd>
 
@@ -397,7 +397,7 @@ await client.DeviceLive.GetOwnerProfileAsync(
 </details>
 
 ## DeviceHistory
-<details><summary><code>client.DeviceHistory.<a href="/src/WeathercloudApi/DeviceHistory/DeviceHistoryClient.cs">GetEvolutionAsync</a>(GetEvolutionDeviceHistoryRequest { ... }) -> WithRawResponseTask&lt;EvolutionResponse&gt;</code></summary>
+<details><summary><code>client.DeviceHistory.<a href="/src/Weathercloud/DeviceHistory/DeviceHistoryClient.cs">GetEvolutionAsync</a>(GetEvolutionDeviceHistoryRequest { ... }) -> WithRawResponseTask&lt;EvolutionResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -478,7 +478,7 @@ await client.DeviceHistory.GetEvolutionAsync(
 </details>
 
 ## Forecast
-<details><summary><code>client.Forecast.<a href="/src/WeathercloudApi/Forecast/ForecastClient.cs">GetDailyAsync</a>(GetDailyForecastRequest { ... }) -> WithRawResponseTask&lt;ForecastResponse&gt;</code></summary>
+<details><summary><code>client.Forecast.<a href="/src/Weathercloud/Forecast/ForecastClient.cs">GetDailyAsync</a>(GetDailyForecastRequest { ... }) -> WithRawResponseTask&lt;ForecastResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -519,7 +519,7 @@ await client.Forecast.GetDailyAsync(new GetDailyForecastRequest { Id = "57264685
 </details>
 
 ## Map
-<details><summary><code>client.Map.<a href="/src/WeathercloudApi/Map/MapClient.cs">GetDevicesAsync</a>(GetDevicesMapRequest { ... }) -> WithRawResponseTask&lt;MapDevicesResponse&gt;</code></summary>
+<details><summary><code>client.Map.<a href="/src/Weathercloud/Map/MapClient.cs">GetDevicesAsync</a>(GetDevicesMapRequest { ... }) -> WithRawResponseTask&lt;MapDevicesResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -575,7 +575,7 @@ await client.Map.GetDevicesAsync(new GetDevicesMapRequest());
 </dl>
 </details>
 
-<details><summary><code>client.Map.<a href="/src/WeathercloudApi/Map/MapClient.cs">GetBackgroundDevicesAsync</a>(GetBackgroundDevicesMapRequest { ... }) -> WithRawResponseTask&lt;MapDevicesResponse&gt;</code></summary>
+<details><summary><code>client.Map.<a href="/src/Weathercloud/Map/MapClient.cs">GetBackgroundDevicesAsync</a>(GetBackgroundDevicesMapRequest { ... }) -> WithRawResponseTask&lt;MapDevicesResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -615,7 +615,7 @@ await client.Map.GetBackgroundDevicesAsync(new GetBackgroundDevicesMapRequest())
 </dl>
 </details>
 
-<details><summary><code>client.Map.<a href="/src/WeathercloudApi/Map/MapClient.cs">GetMetarsAsync</a>(Dictionary&lt;string, object?&gt; { ... }) -> WithRawResponseTask&lt;GetMetarsMapResponse&gt;</code></summary>
+<details><summary><code>client.Map.<a href="/src/Weathercloud/Map/MapClient.cs">GetMetarsAsync</a>(Dictionary&lt;string, object?&gt; { ... }) -> WithRawResponseTask&lt;GetMetarsMapResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -656,7 +656,7 @@ await client.Map.GetMetarsAsync(new Dictionary<string, object?>() { { "key", "va
 </details>
 
 ## Stations
-<details><summary><code>client.Stations.<a href="/src/WeathercloudApi/Stations/StationsClient.cs">GetNearbyAsync</a>(GetNearbyStationsRequest { ... }) -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
+<details><summary><code>client.Stations.<a href="/src/Weathercloud/Stations/StationsClient.cs">GetNearbyAsync</a>(GetNearbyStationsRequest { ... }) -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -719,7 +719,7 @@ await client.Stations.GetNearbyAsync(
 </dl>
 </details>
 
-<details><summary><code>client.Stations.<a href="/src/WeathercloudApi/Stations/StationsClient.cs">GetPopularAsync</a>(GetPopularStationsRequest { ... }) -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
+<details><summary><code>client.Stations.<a href="/src/Weathercloud/Stations/StationsClient.cs">GetPopularAsync</a>(GetPopularStationsRequest { ... }) -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -761,7 +761,7 @@ await client.Stations.GetPopularAsync(
 </dl>
 </details>
 
-<details><summary><code>client.Stations.<a href="/src/WeathercloudApi/Stations/StationsClient.cs">GetNewestAsync</a>(GetNewestStationsRequest { ... }) -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
+<details><summary><code>client.Stations.<a href="/src/Weathercloud/Stations/StationsClient.cs">GetNewestAsync</a>(GetNewestStationsRequest { ... }) -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -801,7 +801,7 @@ await client.Stations.GetNewestAsync(new GetNewestStationsRequest { Country = "B
 </dl>
 </details>
 
-<details><summary><code>client.Stations.<a href="/src/WeathercloudApi/Stations/StationsClient.cs">GetMostFollowedAsync</a>(GetMostFollowedStationsRequest { ... }) -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
+<details><summary><code>client.Stations.<a href="/src/Weathercloud/Stations/StationsClient.cs">GetMostFollowedAsync</a>(GetMostFollowedStationsRequest { ... }) -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -841,7 +841,7 @@ await client.Stations.GetMostFollowedAsync(new GetMostFollowedStationsRequest { 
 </dl>
 </details>
 
-<details><summary><code>client.Stations.<a href="/src/WeathercloudApi/Stations/StationsClient.cs">GetLastViewsAsync</a>() -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
+<details><summary><code>client.Stations.<a href="/src/Weathercloud/Stations/StationsClient.cs">GetLastViewsAsync</a>() -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -866,7 +866,7 @@ await client.Stations.GetLastViewsAsync();
 </dl>
 </details>
 
-<details><summary><code>client.Stations.<a href="/src/WeathercloudApi/Stations/StationsClient.cs">GetOwnAsync</a>() -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
+<details><summary><code>client.Stations.<a href="/src/Weathercloud/Stations/StationsClient.cs">GetOwnAsync</a>() -> WithRawResponseTask&lt;PageDevicesResponse&gt;</code></summary>
 <dl>
 <dd>
 
@@ -891,7 +891,7 @@ await client.Stations.GetOwnAsync();
 </dl>
 </details>
 
-<details><summary><code>client.Stations.<a href="/src/WeathercloudApi/Stations/StationsClient.cs">GetStationPageAsync</a>(GetStationPageStationsRequest { ... }) -> WithRawResponseTask&lt;string&gt;</code></summary>
+<details><summary><code>client.Stations.<a href="/src/Weathercloud/Stations/StationsClient.cs">GetStationPageAsync</a>(GetStationPageStationsRequest { ... }) -> WithRawResponseTask&lt;string&gt;</code></summary>
 <dl>
 <dd>
 
@@ -959,7 +959,7 @@ await client.Stations.GetStationPageAsync(
 </details>
 
 ## Metar
-<details><summary><code>client.Metar.<a href="/src/WeathercloudApi/Metar/MetarClient.cs">GetValuesAsync</a>(GetValuesMetarRequest { ... }) -> WithRawResponseTask&lt;DeviceValues&gt;</code></summary>
+<details><summary><code>client.Metar.<a href="/src/Weathercloud/Metar/MetarClient.cs">GetValuesAsync</a>(GetValuesMetarRequest { ... }) -> WithRawResponseTask&lt;DeviceValues&gt;</code></summary>
 <dl>
 <dd>
 

@@ -2,7 +2,19 @@
   "cliVersion": "5.140.0",
   "generatorName": "fernapi/fern-csharp-sdk",
   "generatorVersion": "2.86.1",
-  "originGitCommit": "dc23b02ef99720811f626ae678a6781e5cc4cf44",
+  "generatorConfig": {
+    "package-id": "Weathercloud",
+    "namespace": "Weathercloud",
+    "client-class-name": "WeathercloudClient",
+    "package-metadata": {
+      "description": "C# SDK for the Weathercloud API",
+      "authors": [
+        "MauroDruwel"
+      ],
+      "repository-url": "https://github.com/MauroDruwel/weathercloud-csharp"
+    }
+  },
+  "originGitCommit": "6c7686622cba6856fd41270407fa63fad69793b0",
   "originGitCommitIsDirty": true,
   "invokedBy": "manual"
 }
